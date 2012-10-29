@@ -6,6 +6,7 @@
 *.ear
 
 target/
+test-output/
 
 .project
 .classpath
