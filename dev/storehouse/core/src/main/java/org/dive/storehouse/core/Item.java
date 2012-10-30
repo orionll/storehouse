@@ -1,16 +1,29 @@
 package org.dive.storehouse.core;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 /**
  * Created 29.10.2012
  * @author orionll
  * 
 **/
+@Entity
+@Table
 public class Item extends AbstractEntity
 {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
     private String name;
     private String description;
+
+    @ManyToOne
     private Person currentOwner;
 
     @Override

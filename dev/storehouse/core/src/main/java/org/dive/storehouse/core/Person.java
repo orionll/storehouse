@@ -2,6 +2,12 @@ package org.dive.storehouse.core;
 
 import static com.google.common.base.Preconditions.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import com.google.common.annotations.VisibleForTesting;
 
 /**
@@ -9,12 +15,18 @@ import com.google.common.annotations.VisibleForTesting;
  * @author orionll
  * 
 **/
+@Entity
+@Table
 public class Person extends AbstractEntity
 {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
     private String firstName;
     private String lastName;
     private String description;
+    private String phoneNumber;
 
     @Override
     public PersonId getId()
@@ -57,5 +69,15 @@ public class Person extends AbstractEntity
     public void setDescription(String description)
     {
         this.description = description;
+    }
+
+    public String getPhoneNumber()
+    {
+        return this.phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber)
+    {
+        this.phoneNumber = phoneNumber;
     }
 }

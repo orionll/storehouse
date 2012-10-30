@@ -1,5 +1,6 @@
 package org.dive.storehouse.core;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -8,6 +9,7 @@ import javax.persistence.PersistenceContext;
  * @author orionll
  * 
 **/
+@Stateless
 public class PersonRepository extends Repository<Person, PersonId>
 {
     @PersistenceContext
