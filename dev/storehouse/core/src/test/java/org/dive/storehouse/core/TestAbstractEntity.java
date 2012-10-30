@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 /**
  * Created 30.10.2012
  * @author orionll
- * 
+ *
 **/
 public class TestAbstractEntity
 {

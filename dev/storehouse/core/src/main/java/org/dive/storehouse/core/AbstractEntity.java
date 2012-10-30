@@ -7,7 +7,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 /**
  * Created 29.10.2012
  * @author orionll
- * 
+ *
 **/
 public abstract class AbstractEntity
 {

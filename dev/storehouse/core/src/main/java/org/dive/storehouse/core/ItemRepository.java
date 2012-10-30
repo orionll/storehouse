@@ -13,7 +13,7 @@ import javax.persistence.criteria.Root;
 /**
  * Created 29.10.2012
  * @author orionll
- * 
+ *
 **/
 @Stateless
 public class ItemRepository extends Repository<Item, ItemId>

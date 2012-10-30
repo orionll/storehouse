@@ -10,7 +10,7 @@ import javax.persistence.Table;
 /**
  * Created 29.10.2012
  * @author orionll
- * 
+ *
 **/
 @Entity
 @Table

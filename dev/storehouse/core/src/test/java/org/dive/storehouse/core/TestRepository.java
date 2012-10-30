@@ -22,7 +22,7 @@ import com.google.common.collect.ImmutableList;
 /**
  * Created 30.10.2012
  * @author orionll
- * 
+ *
 **/
 public class TestRepository
 {

@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Created 30.10.2012
  * @author orionll
- * 
+ *
 **/
 @Startup
 @Singleton

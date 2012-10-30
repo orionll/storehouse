@@ -14,7 +14,7 @@ import com.google.common.annotations.VisibleForTesting;
 /**
  * Created 30.10.2012
  * @author orionll
- * 
+ *
 **/
 public abstract class Repository<E extends AbstractEntity, I extends EntityId>
 {

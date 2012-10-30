@@ -13,7 +13,7 @@ import com.google.common.annotations.VisibleForTesting;
 /**
  * Created 29.10.2012
  * @author orionll
- * 
+ *
 **/
 @Entity
 @Table

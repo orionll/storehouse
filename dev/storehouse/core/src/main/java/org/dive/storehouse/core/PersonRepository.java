@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 /**
  * Created 29.10.2012
  * @author orionll
- * 
+ *
 **/
 @Stateless
 public class PersonRepository extends Repository<Person, PersonId>
