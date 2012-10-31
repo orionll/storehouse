@@ -60,6 +60,7 @@ public class ITItemRepository extends Arquillian
     public void persistAndFindById()
     {
         Item item = new Item();
+        item.setName("Test");
         this.itemRepository.persist(item);
         assertThat(item.getId()).isNotNull();
 

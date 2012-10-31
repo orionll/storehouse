@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import com.google.common.annotations.VisibleForTesting;
 
@@ -23,9 +25,17 @@ public class Person extends AbstractEntity
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    @NotNull
+    @Size(min = 1, max = 512)
     private String firstName;
+
+    @NotNull
+    @Size(min = 1, max = 512)
     private String lastName;
+
     private String description;
+
+    @Size(min = 1, max = 512)
     private String phoneNumber;
 
     @Override
