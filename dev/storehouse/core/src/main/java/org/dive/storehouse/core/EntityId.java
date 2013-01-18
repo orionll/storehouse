@@ -2,10 +2,8 @@ package org.dive.storehouse.core;
 
 import static com.google.common.base.Preconditions.*;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 import com.google.common.annotations.VisibleForTesting;
+import com.google.common.base.Objects;
 import com.google.common.primitives.Longs;
 
 /**
@@ -64,6 +62,6 @@ public abstract class EntityId
     @Override
     public final String toString()
     {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        return Objects.toStringHelper(this).add("id", this.id).toString();
     }
 }
