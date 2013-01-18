@@ -31,6 +31,18 @@ public class TestAbstractEntity
     }
 
     @Test
+    public void testEqualsNull()
+    {
+        assertThat(this.entity1).isNotEqualTo(null);
+    }
+
+    @Test
+    public void testEqualsDifferentClass()
+    {
+        assertThat(this.entity1).isNotEqualTo(100);
+    }
+
+    @Test
     public void testEqualsNotPersistedEntities()
     {
         // Given
