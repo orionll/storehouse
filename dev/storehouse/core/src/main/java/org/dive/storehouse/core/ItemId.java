@@ -7,7 +7,7 @@ import static com.google.common.base.Preconditions.*;
  * @author orionll
  *
 **/
-public class ItemId extends EntityId
+public final class ItemId extends EntityId
 {
     private ItemId(long id)
     {

@@ -2,8 +2,6 @@ package org.dive.storehouse.core;
 
 import java.util.Objects;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-
 /**
  * Created 29.10.2012
  * @author orionll
@@ -52,6 +50,6 @@ public abstract class AbstractEntity
     @Override
     public String toString()
     {
-        return ToStringBuilder.reflectionToString(this);
+        return com.google.common.base.Objects.toStringHelper(this).add("id", getId()).toString();
     }
 }
