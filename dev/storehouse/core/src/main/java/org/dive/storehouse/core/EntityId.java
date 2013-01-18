@@ -2,7 +2,6 @@ package org.dive.storehouse.core;
 
 import static com.google.common.base.Preconditions.*;
 
-import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Objects;
 import com.google.common.primitives.Longs;
 
@@ -16,13 +15,6 @@ public abstract class EntityId
     private long id;
 
     EntityId(long id)
-    {
-        checkArgument(id >= 0, "[id] must be nonnegative");
-        this.id = id;
-    }
-
-    @VisibleForTesting
-    void setId(long id)
     {
         checkArgument(id >= 0, "[id] must be nonnegative");
         this.id = id;
